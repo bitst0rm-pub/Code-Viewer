@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/options.css">
+    <script type="application/javascript" src="options.js"></script>
+    <title>Options</title>
+</head>
+
+<body>
+    <div class="fieldset-wrapper">
+        <fieldset>
+            <legend>Options</legend>
+            <div id="alert"></div>
+            <table class="table">
+                <tr>
+                    <td class="cell topic-cell">Enabled</td>
+                    <td class="cell content-cell" colspan="3">
+                        <input type="checkbox" id="enabled" name="enabled">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell topic-cell">Line-wrapping</td>
+                    <td class="cell content-cell" colspan="3">
+                        <input type="checkbox" id="line-wrap" name="line-wrap">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell topic-cell">Font family</td>
+                    <td class="cell content-cell" colspan="3">
+                        <input type="text" id="font-family" name="font-family">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell topic-cell">Font size</td>
+                    <td class="cell content-cell" colspan="3">
+                        <input type="number" id="font-size" name="font-size" min="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell topic-cell">Line height</td>
+                    <td class="cell content-cell" colspan="3">
+                        <input type="number" id="line-height" name="line-height" min="8">
+                    </td>
+                </tr>
+                <tbody id="theme-section"></tbody>
+                <tr>
+                    <td class="cell topic-cell blacklist-topic-cell">Blacklist</td>
+                    <td class="cell content-cell" colspan="3">
+                        <textarea id="blacklist" name="blacklist" rows="10" placeholder="Exclude files by file extension or mime-type using regular expressions, e.g.:&#10;^md$&#10;^json$&#10;^(js|php|py)$&#10;^text\/x\-csrc$&#10;^.+?\/(xml|css)$"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell topic-cell" id="version"></td>
+                    <td class="cell content-cell button-cell" colspan="3">
+                        <button id="export">Export</button>
+                        <button id="import">Import</button>
+                        <button id="reset">Reset</button>
+                        <button id="save">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+</body>
+
+</html>

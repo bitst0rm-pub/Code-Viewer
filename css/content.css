@@ -1,0 +1,48 @@
+/* content.css */
+
+body {
+    margin: 0;
+}
+
+table {
+    font: inherit;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    white-space: pre-wrap;
+    color: inherit;
+}
+
+td {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.CodeMirror {
+    height: auto;
+    min-height: 100%;
+    tab-size: 4;
+}
+
+.CodeMirror-gutter-wrapper,
+.CodeMirror-gutter-elt {
+    position: static;
+}
+
+.CodeMirror-gutters {
+    z-index: 1;
+}
+
+.CodeMirror-gutters .CodeMirror-linenumber {
+    visibility: hidden;
+}
+
+.CodeMirror-code {
+    position: relative;
+    z-index: 2;
+}
+
+.CodeMirror-linenumber:before {
+    content: attr(data-n);
+}

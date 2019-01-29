@@ -1,0 +1,81 @@
+/* options.css */
+
+.fieldset-wrapper {
+    overflow: auto;
+    max-height: 600px;
+}
+
+legend {
+    font-size: 1.2em;
+    padding: .3em;
+}
+
+#alert {
+    display: block;
+    margin-bottom: 1em;
+    padding: .25em 1em .25em 1em;
+    text-align: center;
+    opacity: 0;
+    border: 1px solid #f0c36d;
+    background-color: #f9edbe;
+}
+
+.table {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+.cell {
+    box-sizing: border-box;
+    padding: .5em 0 .5em 0;
+    vertical-align: middle;
+}
+
+.topic-cell {
+    padding-right: 2em;
+}
+
+.blacklist-topic-cell {
+    vertical-align: top;
+}
+
+input[type='time'] {
+    min-height: 2em;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+    font: 400 .9rem monospace;
+    width: 100%;
+}
+
+.menu-cell {
+    padding-right: 1em;
+}
+
+.action-button {
+    min-width: 3em !important;
+    min-height: 2em !important;
+    margin: 0 0 0 1em;
+}
+
+#version {
+    font-size: .9em;
+    text-align: left;
+}
+
+.button-cell {
+    height: 2em;
+    text-align: right;
+}
+
+#import,
+#reset,
+#save {
+    margin-bottom: .5em;
+    margin-left: .7em;
+}
